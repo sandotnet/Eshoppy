@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ybWJ5SwFS/S8/tGbfKaD8+iRD3oE+uDq4kHX9cZyfBcxHClZL70/NXgPcsWNu6tAp/4aIELZ/b4ESwhhttRIlA==",
+  "dgSpecHash": "DfIpN8X/tphEue4EFFcNGRcQsiYD9dlxi0Z8hmncRAGE5ksoLUupPFlGgSP/vQeLuuF9KYDqwUj7EZ5P6ryPKQ==",
   "success": true,
-  "projectFilePath": "D:\\CGI\\bridge_wave-5\\Microservices\\EShoppy\\EShoppy.AdminAPI\\EShoppy.AdminAPI.csproj",
+  "projectFilePath": "D:\\CGI\\Eshoppy\\EShoppy\\EShoppy.AdminAPI\\EShoppy.AdminAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\santhosh\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\santhosh\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

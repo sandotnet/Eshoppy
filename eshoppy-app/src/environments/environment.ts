@@ -3,8 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
-};
+  production: false,
+  admin_url:'',
+  account_url:'',
+  user_url:'',
+  payment_url:''
+  };
 
 /*
  * For easier debugging in development mode, you can import the following file

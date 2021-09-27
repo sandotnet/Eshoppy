@@ -19,6 +19,15 @@ namespace EShoppy.Gateway
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddOcelot();
+            //Confiture Cors Service
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options =>
+       options.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                );
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -30,6 +39,7 @@ namespace EShoppy.Gateway
             }
 
             app.UseRouting();
+            app.UseCors("AllowOrigin"); //add Cors Middleware
 
             app.UseEndpoints(endpoints =>
             {

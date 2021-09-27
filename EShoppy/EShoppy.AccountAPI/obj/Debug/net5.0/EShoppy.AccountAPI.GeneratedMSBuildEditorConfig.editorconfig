@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = EShoppy.AccountAPI
-build_property.ProjectDir = D:\CGI\bridge_wave-5\Microservices\EShoppy\EShoppy.AccountAPI\
+build_property.ProjectDir = D:\CGI\Eshoppy\EShoppy\EShoppy.AccountAPI\
