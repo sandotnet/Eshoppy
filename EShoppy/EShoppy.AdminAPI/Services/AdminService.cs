@@ -41,6 +41,19 @@ namespace EShoppy.AdminAPI.Services
             }
         }
 
+        public Item GetItem(string itemId)
+        {
+            try
+            {
+                return repository.GetItem(itemId);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         public List<Item> GetItems()
         {
             try

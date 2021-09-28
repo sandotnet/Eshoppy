@@ -9,6 +9,6 @@ namespace EShoppy.UserAPI.Services
     public interface IUserService
     {
         Item GetItem(string itemName);
-        void OrderItem(Order order);
+        void Purchase(Payment payment);
     }
 }

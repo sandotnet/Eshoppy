@@ -63,15 +63,18 @@ namespace EShoppy.AccountAPI.Migrations
                     b.Property<double>("Amount")
                         .HasColumnType("float");
 
-                    b.Property<string>("OrderId")
+                    b.Property<string>("ItemId")
                         .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("PurchaseDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("PaymentId");
 
-                    b.HasIndex("OrderId");
+                    b.HasIndex("ItemId");
 
                     b.HasIndex("UserId");
 
@@ -120,15 +123,15 @@ namespace EShoppy.AccountAPI.Migrations
 
             modelBuilder.Entity("EShoppy.AccountAPI.Entities.Payment", b =>
                 {
-                    b.HasOne("EShoppy.AccountAPI.Entities.Order", "Oder")
+                    b.HasOne("EShoppy.AccountAPI.Entities.Item", "Item")
                         .WithMany()
-                        .HasForeignKey("OrderId");
+                        .HasForeignKey("ItemId");
 
                     b.HasOne("EShoppy.AccountAPI.Entities.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId");
 
-                    b.Navigation("Oder");
+                    b.Navigation("Item");
 
                     b.Navigation("User");
                 });

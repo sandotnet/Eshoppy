@@ -44,6 +44,19 @@ namespace EShoppy.AdminAPI.Repositories
             }
         }
 
+        public Item GetItem(string itemId)
+        {
+            try
+            {
+                return context.Items.SingleOrDefault(i => i.ItemId == itemId);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         public List<Item> GetItems()
         {
             try

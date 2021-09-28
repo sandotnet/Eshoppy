@@ -8,6 +8,7 @@ namespace EShoppy.AdminAPI.Services
    public interface IAdminService
     {
         void AddItem(Item item);
+        Item GetItem(string itemId);
         List<Item> GetItems();
         void UpdateItem(Item item);
         void DeleteItem(string itemId);

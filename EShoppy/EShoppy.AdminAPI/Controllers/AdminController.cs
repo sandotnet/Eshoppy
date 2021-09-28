@@ -34,6 +34,22 @@ namespace EShoppy.AdminAPI.Controllers
                 return NotFound(ex.Message);
             }
         }
+        [HttpGet]
+        [Route("GetItem/{itemId}")]
+        public IActionResult GetItem(string itemId)
+        {
+            try
+            {
+                Item item = adminService.GetItem(itemId);
+                return Ok(item);
+
+            }
+            catch (Exception ex)
+            {
+
+                return NotFound(ex.Message);
+            }
+        }
         [HttpPost]
         [Route("AddItem")]
         public IActionResult AddItem(Item item)

@@ -29,11 +29,15 @@ namespace EShoppy.UserAPI.Repositories
             }
         }
 
-        public void OrderItem(Order order)
+      
+
+        public void PurchaseItem(Payment payment)
         {
             try
             {
-                context.Orders.Add(order);
+                payment.PaymentId = "P" + new Random().Next(1000, 9999);
+                payment.PurchaseDate = DateTime.Now;
+                context.Payments.Add(payment);
                 context.SaveChanges();
             }
             catch (Exception)

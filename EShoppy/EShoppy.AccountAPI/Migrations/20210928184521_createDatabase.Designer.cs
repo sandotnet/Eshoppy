@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EShoppy.AccountAPI.Migrations
 {
     [DbContext(typeof(EShoppyDBContext))]
-    [Migration("20210927153821_CreateDB")]
-    partial class CreateDB
+    [Migration("20210928184521_createDatabase")]
+    partial class createDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -65,15 +65,18 @@ namespace EShoppy.AccountAPI.Migrations
                     b.Property<double>("Amount")
                         .HasColumnType("float");
 
-                    b.Property<string>("OrderId")
+                    b.Property<string>("ItemId")
                         .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("PurchaseDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("PaymentId");
 
-                    b.HasIndex("OrderId");
+                    b.HasIndex("ItemId");
 
                     b.HasIndex("UserId");
 
@@ -100,6 +103,10 @@ namespace EShoppy.AccountAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("UserId");
 
                     b.ToTable("User");
@@ -118,15 +125,15 @@ namespace EShoppy.AccountAPI.Migrations
 
             modelBuilder.Entity("EShoppy.AccountAPI.Entities.Payment", b =>
                 {
-                    b.HasOne("EShoppy.AccountAPI.Entities.Order", "Oder")
+                    b.HasOne("EShoppy.AccountAPI.Entities.Item", "Item")
                         .WithMany()
-                        .HasForeignKey("OrderId");
+                        .HasForeignKey("ItemId");
 
                     b.HasOne("EShoppy.AccountAPI.Entities.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId");
 
-                    b.Navigation("Oder");
+                    b.Navigation("Item");
 
                     b.Navigation("User");
                 });

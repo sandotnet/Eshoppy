@@ -9,6 +9,7 @@ namespace EShoppy.AdminAPI.Repositories
     {
         void AddItem(Item item);
         List<Item> GetItems();
+        Item GetItem(string itemId);
         void UpdateItem(Item item);
         void DeleteItem(string itemId);
     }

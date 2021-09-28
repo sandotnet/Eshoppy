@@ -4,10 +4,10 @@
 
 export const environment = {
   production: false,
-  admin_url:'',
-  account_url:'',
-  user_url:'',
-  payment_url:''
+  admin_url:'http://localhost:46532/Eshoppy/Admin/',
+  account_url:'http://localhost:46532/Eshoppy/Account/',
+  user_url:'http://localhost:46532/Eshoppy/User/',
+  payment_url:'http://localhost:46532/Eshoppy/Payment/'
   };
 
 /*

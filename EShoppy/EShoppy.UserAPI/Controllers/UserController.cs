@@ -34,12 +34,12 @@ namespace EShoppy.UserAPI.Controllers
             }
         }
         [HttpPost]
-        [Route("NewOrder")]
-        public IActionResult NewOrder(Order order)
+        [Route("Purchase")]
+        public IActionResult Purchase(Payment payment)
         {
             try
             {
-                userService.OrderItem(order);
+                userService.Purchase(payment);
                 return Ok();
             }
             catch (Exception ex)

@@ -28,11 +28,11 @@ namespace EShoppy.UserAPI.Services
             }
         }
 
-        public void OrderItem(Order order)
+        public void Purchase(Payment payment)
         {
             try
             {
-                 repository.OrderItem(order);
+                repository.PurchaseItem(payment);
             }
             catch (Exception)
             {

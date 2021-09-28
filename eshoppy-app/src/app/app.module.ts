@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,8 +12,10 @@ import { ItemsComponent } from './Admin/items/items.component';
 import { AccountService } from './Services/account.service';
 import { UserService } from './Services/user.service';
 import { AdminService } from './Services/admin.service';
-import { PaymentService } from './Services/payment.service';
 import { SearchComponent } from './User/search/search.component';
+import { AdmingDashboardComponent } from './Admin/adming-dashboard/adming-dashboard.component';
+import { UserDashboardComponent } from './User/user-dashboard/user-dashboard.component';
+import { PaymentComponent } from './User/payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -23,15 +25,19 @@ import { SearchComponent } from './User/search/search.component';
     AdditemComponent,
     UpdateitemComponent,
     ItemsComponent,
-    SearchComponent
+    SearchComponent,
+    AdmingDashboardComponent,
+    UserDashboardComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
-  providers: [AccountService,UserService,AdminService,PaymentService],
+  providers: [AccountService,UserService,AdminService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

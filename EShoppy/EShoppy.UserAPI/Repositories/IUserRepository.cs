@@ -8,6 +8,6 @@ namespace EShoppy.UserAPI.Repositories
     public interface IUserRepository
     {
         Item GetItem(string itemName);
-        void OrderItem(Order order);
+        void PurchaseItem(Payment payment);
     }
 }

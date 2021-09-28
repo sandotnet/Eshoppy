@@ -13,11 +13,12 @@ namespace EShoppy.UserAPI.Entities
         public string PaymentId { get; set; }
         [ForeignKey("User")]
         public string UserId { get; set; }
-        [ForeignKey("Order")]
-        public string OrderId { get; set; }
+        [ForeignKey("Item")]
+        public string ItemId { get; set; }
         public double Amount { get; set; }
+        public DateTime PurchaseDate { get; set; }
         public User User { get; set; }
-        public Order Oder { get; set; }
+        public Item Item { get; set; }
     }
 }
 
