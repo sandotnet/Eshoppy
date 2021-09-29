@@ -83,7 +83,6 @@ D:\CGI\Eshoppy\EShoppy\EShoppy.AccountAPI\bin\Debug\net5.0\Microsoft.IdentityMod
 D:\CGI\Eshoppy\EShoppy\EShoppy.AccountAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\CGI\Eshoppy\EShoppy\EShoppy.AccountAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 D:\CGI\Eshoppy\EShoppy\EShoppy.AccountAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
-D:\CGI\Eshoppy\EShoppy\EShoppy.AccountAPI\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\CGI\Eshoppy\EShoppy\EShoppy.AccountAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\CGI\Eshoppy\EShoppy\EShoppy.AccountAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\CGI\Eshoppy\EShoppy\EShoppy.AccountAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -120,3 +119,4 @@ D:\CGI\Eshoppy\EShoppy\EShoppy.AccountAPI\obj\Debug\net5.0\EShoppy.AccountAPI.dl
 D:\CGI\Eshoppy\EShoppy\EShoppy.AccountAPI\obj\Debug\net5.0\ref\EShoppy.AccountAPI.dll
 D:\CGI\Eshoppy\EShoppy\EShoppy.AccountAPI\obj\Debug\net5.0\EShoppy.AccountAPI.pdb
 D:\CGI\Eshoppy\EShoppy\EShoppy.AccountAPI\obj\Debug\net5.0\EShoppy.AccountAPI.genruntimeconfig.cache
+D:\CGI\Eshoppy\EShoppy\EShoppy.AccountAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

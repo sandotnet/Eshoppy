@@ -66,3 +66,10 @@ D:\CGI\Eshoppy\EShoppy\EShoppy.Gateway\obj\Debug\net5.0\EShoppy.Gateway.dll
 D:\CGI\Eshoppy\EShoppy\EShoppy.Gateway\obj\Debug\net5.0\ref\EShoppy.Gateway.dll
 D:\CGI\Eshoppy\EShoppy\EShoppy.Gateway\obj\Debug\net5.0\EShoppy.Gateway.pdb
 D:\CGI\Eshoppy\EShoppy\EShoppy.Gateway\obj\Debug\net5.0\EShoppy.Gateway.genruntimeconfig.cache
+D:\CGI\Eshoppy\EShoppy\EShoppy.Gateway\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\CGI\Eshoppy\EShoppy\EShoppy.Gateway\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\CGI\Eshoppy\EShoppy\EShoppy.Gateway\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\CGI\Eshoppy\EShoppy\EShoppy.Gateway\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\CGI\Eshoppy\EShoppy\EShoppy.Gateway\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\CGI\Eshoppy\EShoppy\EShoppy.Gateway\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\CGI\Eshoppy\EShoppy\EShoppy.Gateway\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll

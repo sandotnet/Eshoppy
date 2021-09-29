@@ -4,6 +4,7 @@ import { Login } from 'src/app/Models/login';
 import { User } from 'src/app/Models/user';
 import { AccountService } from 'src/app/Services/account.service';
 import { Router } from '@angular/router';
+import { Authuser } from 'src/app/Models/authuser';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -13,7 +14,7 @@ export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   submitted = false;
   login: Login;
-  user:User;
+  authuser:Authuser;
   constructor(private frombuilder: FormBuilder, private account_service: AccountService,private router:Router) {
     this.login = new Login();
   }
@@ -31,13 +32,14 @@ export class LoginComponent implements OnInit {
       this.login.email=this.loginForm.value["email"];
       this.login.password=this.loginForm.value['pwd']
       this.account_service.Login(this.login).subscribe(response => {
-        this.user=response
-      if(this.user!=null)
+        this.authuser=response
+      if(this.authuser!=null)
       {
-      if(this.user.role.toUpperCase()=="USER")
+        localStorage.token=this.authuser.token;
+      if(this.authuser.role.toUpperCase()=="USER")
       {
         //landing to user dash-board
-        localStorage.userId=this.user.userId;
+        localStorage.userId=this.authuser.userId;
         this.router.navigateByUrl('/user');
       }
       else

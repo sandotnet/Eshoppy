@@ -6,10 +6,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using EShoppy.UserAPI.Services;
 using EShoppy.UserAPI.Entities;
+using Microsoft.AspNetCore.Authorization;
+
 namespace EShoppy.UserAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles ="USER")]
     public class UserController : ControllerBase
     {
         private readonly IUserService userService;

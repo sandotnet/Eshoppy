@@ -93,7 +93,6 @@ D:\CGI\Eshoppy\EShoppy\EShoppy.UserAPI\bin\Debug\net5.0\Microsoft.IdentityModel.
 D:\CGI\Eshoppy\EShoppy\EShoppy.UserAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\CGI\Eshoppy\EShoppy\EShoppy.UserAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 D:\CGI\Eshoppy\EShoppy\EShoppy.UserAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
-D:\CGI\Eshoppy\EShoppy\EShoppy.UserAPI\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\CGI\Eshoppy\EShoppy\EShoppy.UserAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\CGI\Eshoppy\EShoppy\EShoppy.UserAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\CGI\Eshoppy\EShoppy\EShoppy.UserAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -120,3 +119,4 @@ D:\CGI\Eshoppy\EShoppy\EShoppy.UserAPI\obj\Debug\net5.0\scopedcss\bundle\EShoppy
 D:\CGI\Eshoppy\EShoppy\EShoppy.UserAPI\obj\Debug\net5.0\EShoppy.UserAPI.RazorTargetAssemblyInfo.cache
 D:\CGI\Eshoppy\EShoppy\EShoppy.UserAPI\obj\Debug\net5.0\EShoppy.UserAPI.csproj.CopyComplete
 D:\CGI\Eshoppy\EShoppy\EShoppy.UserAPI\obj\Debug\net5.0\EShoppy.UserAPI.genruntimeconfig.cache
+D:\CGI\Eshoppy\EShoppy\EShoppy.UserAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

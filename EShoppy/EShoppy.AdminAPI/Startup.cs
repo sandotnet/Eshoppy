@@ -14,6 +14,10 @@ using EShoppy.AdminAPI.Repositories;
 using EShoppy.AdminAPI.Services;
 using EShoppy.AdminAPI.DBContext;
 using Microsoft.EntityFrameworkCore;
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+
 namespace EShoppy.AdminAPI
 {
     public class Startup
@@ -33,6 +37,25 @@ namespace EShoppy.AdminAPI
             services.AddDbContext<EShoppyDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("EShoppyDBConnection")));
             services.AddScoped<IAdminRepository, AdminRepository>();
             services.AddScoped<IAdminService, AdminService>();
+            var key = Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]);
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+        .AddJwtBearer(x =>
+        {
+            x.RequireHttpsMetadata = false;
+            x.SaveToken = true;
+            x.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(key),
+                ValidateIssuer = false,
+                ValidateAudience = false
+            };
+        });
+           
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "EShoppy.ItemAPI", Version = "v1" });
@@ -50,7 +73,7 @@ namespace EShoppy.AdminAPI
             }
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

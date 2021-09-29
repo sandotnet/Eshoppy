@@ -14,6 +14,10 @@ using EShoppy.UserAPI.Repositories;
 using EShoppy.UserAPI.Services;
 using EShoppy.UserAPI.DBContext;
 using Microsoft.EntityFrameworkCore;
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+
 namespace EShoppy.UserAPI
 {
     public class Startup
@@ -33,6 +37,25 @@ namespace EShoppy.UserAPI
             services.AddDbContext<EShoppyDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("EShoppyDBConnection")));
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserService, UserService>();
+            var key = Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]);
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+        .AddJwtBearer(x =>
+        {
+            x.RequireHttpsMetadata = false;
+            x.SaveToken = true;
+            x.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(key),
+                ValidateIssuer = false,
+                ValidateAudience = false
+            };
+        });
+           
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "EShoppy.OrderAPI", Version = "v1" });
@@ -50,7 +73,7 @@ namespace EShoppy.UserAPI
             }
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

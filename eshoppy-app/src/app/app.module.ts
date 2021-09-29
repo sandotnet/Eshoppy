@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule,ReactiveFormsModule} from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './Account/login/login.component';
@@ -16,6 +16,8 @@ import { SearchComponent } from './User/search/search.component';
 import { AdmingDashboardComponent } from './Admin/adming-dashboard/adming-dashboard.component';
 import { UserDashboardComponent } from './User/user-dashboard/user-dashboard.component';
 import { PaymentComponent } from './User/payment/payment.component';
+import { AuthInterceptorService } from './auth-interceptor.service';
+import { HttperrorinterceptorService } from './httperrorinterceptor.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,18 @@ import { PaymentComponent } from './User/payment/payment.component';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [AccountService,UserService,AdminService],
+  providers: [
+    { 
+    provide: HTTP_INTERCEPTORS, 
+    useClass: AuthInterceptorService, 
+    multi: true 
+  },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: HttperrorinterceptorService,
+      multi: true
+    },
+    AccountService,UserService,AdminService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

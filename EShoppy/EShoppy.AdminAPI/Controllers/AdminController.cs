@@ -6,10 +6,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using EShoppy.AdminAPI.Entities;
 using EShoppy.AdminAPI.Services;
+using Microsoft.AspNetCore.Authorization;
+
 namespace EShoppy.AdminAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "ADMIN")]
     public class AdminController : ControllerBase
     {
         private readonly IAdminService adminService;
