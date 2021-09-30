@@ -13,6 +13,7 @@ using System.Security.Claims;
 using System.IdentityModel.Tokens.Jwt;
 using System.IO;
 using Microsoft.Extensions.Configuration;
+
 namespace EShoppy.AccountAPI.Controllers
 {
     [Route("api/[controller]")]
@@ -20,10 +21,12 @@ namespace EShoppy.AccountAPI.Controllers
     public class AccountController : ControllerBase
     {
         private readonly IUserService userService;
+        //private readonly ILogger _logger;
 
         public AccountController(IUserService userService)
         {
             this.userService = userService;
+            //this._logger = logger;
         }
         [HttpPost]
         [Route("Register")]
@@ -36,7 +39,9 @@ namespace EShoppy.AccountAPI.Controllers
             }
             catch (Exception ex)
             {
+               // _logger.LogInformation(ex.Message);
                 return NotFound(ex.Message);
+
 
             }
         }
@@ -63,6 +68,7 @@ namespace EShoppy.AccountAPI.Controllers
             }
             catch (Exception ex)
             {
+                //_logger.LogInformation(ex.Message);
                 return NotFound(ex.Message);
 
             }

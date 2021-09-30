@@ -35,7 +35,8 @@ export class LoginComponent implements OnInit {
         this.authuser=response
       if(this.authuser!=null)
       {
-        localStorage.token=this.authuser.token;
+        localStorage.token=this.authuser.token; //store token value
+        console.log(localStorage.token);
       if(this.authuser.role.toUpperCase()=="USER")
       {
         //landing to user dash-board
