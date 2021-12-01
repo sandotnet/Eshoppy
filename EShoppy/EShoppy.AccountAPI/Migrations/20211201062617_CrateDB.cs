@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EShoppy.AccountAPI.Migrations
 {
-    public partial class createDatabase : Migration
+    public partial class CrateDB : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

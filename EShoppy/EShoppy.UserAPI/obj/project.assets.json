@@ -5558,11 +5558,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CGI\\Eshoppy\\EShoppy\\EShoppy.UserAPI\\EShoppy.UserAPI.csproj",
+      "projectUniqueName": "D:\\Clients\\CGI\\Batch-1\\Eshoppy\\EShoppy\\EShoppy.UserAPI\\EShoppy.UserAPI.csproj",
       "projectName": "EShoppy.UserAPI",
-      "projectPath": "D:\\CGI\\Eshoppy\\EShoppy\\EShoppy.UserAPI\\EShoppy.UserAPI.csproj",
+      "projectPath": "D:\\Clients\\CGI\\Batch-1\\Eshoppy\\EShoppy\\EShoppy.UserAPI\\EShoppy.UserAPI.csproj",
       "packagesPath": "C:\\Users\\santhosh\\.nuget\\packages\\",
-      "outputPath": "D:\\CGI\\Eshoppy\\EShoppy\\EShoppy.UserAPI\\obj\\",
+      "outputPath": "D:\\Clients\\CGI\\Batch-1\\Eshoppy\\EShoppy\\EShoppy.UserAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5632,7 +5632,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

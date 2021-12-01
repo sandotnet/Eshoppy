@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6mMjTGMEOi2dcwoKXpnb7QuZXcuQEJlgH49TXMTQv8Io9grr7y+HH9nRiiD8diJDio6FsA2TnWgAfjREBq3u9A==",
+  "dgSpecHash": "DtS3/qZX614boXxlilFjsYkMheaHoFNASYDdsxXpWvVIUy+pZRvbr48MWsY9BDgYyjW4NwDpt5rcoeNQpttWWA==",
   "success": true,
-  "projectFilePath": "D:\\CGI\\Eshoppy\\EShoppy\\EShoppy.UserAPI\\EShoppy.UserAPI.csproj",
+  "projectFilePath": "D:\\Clients\\CGI\\Batch-1\\Eshoppy\\EShoppy\\EShoppy.UserAPI\\EShoppy.UserAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\santhosh\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\santhosh\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.10\\microsoft.aspnetcore.authentication.jwtbearer.5.0.10.nupkg.sha512",

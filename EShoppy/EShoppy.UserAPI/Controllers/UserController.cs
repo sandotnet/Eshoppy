@@ -12,7 +12,7 @@ namespace EShoppy.UserAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles ="USER")]
+    [Authorize(Roles ="User")]
     public class UserController : ControllerBase
     {
         private readonly IUserService userService;

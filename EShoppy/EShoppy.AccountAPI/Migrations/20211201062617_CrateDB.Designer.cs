@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EShoppy.AccountAPI.Migrations
 {
     [DbContext(typeof(EShoppyDBContext))]
-    [Migration("20210928184521_createDatabase")]
-    partial class createDatabase
+    [Migration("20211201062617_CrateDB")]
+    partial class CrateDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -37,6 +37,7 @@ namespace EShoppy.UserAPI
             services.AddDbContext<EShoppyDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("EShoppyDBConnection")));
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserService, UserService>();
+            //token configuration
             var key = Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]);
             services.AddAuthentication(x =>
             {

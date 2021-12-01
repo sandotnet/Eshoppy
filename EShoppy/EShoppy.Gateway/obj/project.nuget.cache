@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FXbwtEtohlzSqgMrefm4PPdQ4cvvpjxSO2WuN5Z592vZ0LkB4uWne26PPLGDotATnS8dEo9jZE6vO+wLVxJfXg==",
+  "dgSpecHash": "v/NbjbGdknJiAqlUIExAyqif8E2Xbb/RsBxWfR8wu1jNNam8ITjR8+2qvMx+Lk/azAZazXQ9C75VL2Tol8LrxA==",
   "success": true,
-  "projectFilePath": "D:\\CGI\\Eshoppy\\EShoppy\\EShoppy.Gateway\\EShoppy.Gateway.csproj",
+  "projectFilePath": "D:\\Clients\\CGI\\Batch-1\\Eshoppy\\EShoppy\\EShoppy.Gateway\\EShoppy.Gateway.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\santhosh\\.nuget\\packages\\fluentvalidation\\9.3.0\\fluentvalidation.9.3.0.nupkg.sha512",
     "C:\\Users\\santhosh\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.10\\microsoft.aspnetcore.authentication.jwtbearer.5.0.10.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CGI\\Eshoppy\\EShoppy\\EShoppy.Gateway\\EShoppy.Gateway.csproj": {}
+    "D:\\Clients\\CGI\\Batch-1\\Eshoppy\\EShoppy\\EShoppy.Gateway\\EShoppy.Gateway.csproj": {}
   },
   "projects": {
-    "D:\\CGI\\Eshoppy\\EShoppy\\EShoppy.Gateway\\EShoppy.Gateway.csproj": {
+    "D:\\Clients\\CGI\\Batch-1\\Eshoppy\\EShoppy\\EShoppy.Gateway\\EShoppy.Gateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CGI\\Eshoppy\\EShoppy\\EShoppy.Gateway\\EShoppy.Gateway.csproj",
+        "projectUniqueName": "D:\\Clients\\CGI\\Batch-1\\Eshoppy\\EShoppy\\EShoppy.Gateway\\EShoppy.Gateway.csproj",
         "projectName": "EShoppy.Gateway",
-        "projectPath": "D:\\CGI\\Eshoppy\\EShoppy\\EShoppy.Gateway\\EShoppy.Gateway.csproj",
+        "projectPath": "D:\\Clients\\CGI\\Batch-1\\Eshoppy\\EShoppy\\EShoppy.Gateway\\EShoppy.Gateway.csproj",
         "packagesPath": "C:\\Users\\santhosh\\.nuget\\packages\\",
-        "outputPath": "D:\\CGI\\Eshoppy\\EShoppy\\EShoppy.Gateway\\obj\\",
+        "outputPath": "D:\\Clients\\CGI\\Batch-1\\Eshoppy\\EShoppy\\EShoppy.Gateway\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
